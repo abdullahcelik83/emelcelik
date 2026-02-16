@@ -193,3 +193,7 @@ small.note {
   min-height: 360px;
   object-fit: cover;
 }
+
+.full-width {
+  grid-column: 1 / -1;
+}
