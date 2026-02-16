@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440" role="img" aria-label="Emel Erik Çelik tanıtım görseli">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b6aca3"/>
+      <stop offset="100%" stop-color="#dcd7d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <text x="540" y="190" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="76" letter-spacing="8" fill="#ffffff" font-weight="700">EMEL ERİK ÇELİK</text>
+  <text x="540" y="250" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="48" letter-spacing="10" fill="#ffffff" font-weight="600">İRADE VE PERFORMANS YÖNETİMİ</text>
+  <circle cx="220" cy="530" r="180" fill="#f8f8f8" stroke="#6f5f53" stroke-width="10"/>
+  <line x1="70" y1="530" x2="370" y2="530" stroke="#7a6a5f" stroke-width="8"/>
+  <line x1="220" y1="380" x2="220" y2="680" stroke="#7a6a5f" stroke-width="8"/>
+  <g stroke="#8b7c71" stroke-width="4">
+    <line x1="70" y1="460" x2="370" y2="460"/>
+    <line x1="70" y1="600" x2="370" y2="600"/>
+    <line x1="140" y1="380" x2="140" y2="680"/>
+    <line x1="300" y1="380" x2="300" y2="680"/>
+  </g>
+  <rect x="430" y="360" width="600" height="920" rx="40" fill="#f7f4ef"/>
+  <text x="730" y="820" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" fill="#2f2f2f" font-weight="600">Biyografi Görseli</text>
+  <text x="730" y="870" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#4a4a4a">(Yüklenen görselin yer tutucusu)</text>
+</svg>
