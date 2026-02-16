@@ -181,6 +181,34 @@ small.note {
   }
 }
 
+.bio-layout {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+  grid-template-areas:
+    "intro photo"
+    "experience experience"
+    "skills skills";
+  align-items: stretch;
+}
+
+.bio-intro {
+  grid-area: intro;
+}
+
+.bio-photo {
+  grid-area: photo;
+  min-height: 520px;
+}
+
+.bio-experience {
+  grid-area: experience;
+}
+
+.bio-skills {
+  grid-area: skills;
+}
+
 .profile-card {
   padding: 0;
   overflow: hidden;
@@ -190,10 +218,20 @@ small.note {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 360px;
   object-fit: cover;
 }
 
-.full-width {
-  grid-column: 1 / -1;
+@media (max-width: 900px) {
+  .bio-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "photo"
+      "experience"
+      "skills";
+  }
+
+  .bio-photo {
+    min-height: 380px;
+  }
 }
