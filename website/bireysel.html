@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bireysel gelişim koçluğu, performans yönetimi ve atölye çalışmaları" />
   <title>Bireysel Hizmetler | Emel Erik Çelik</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header>
     <div class="container navbar">
-      <div class="logo">Emel Erik Çelik</div>
+      <img src="assets/logo.png" alt="Emel Erik Çelik" class="logo">
+      <button class="mobile-menu-toggle" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav aria-label="Ana menü">
         <ul>
           <li><a href="index.html">Anasayfa</a></li>
@@ -25,21 +31,66 @@
   <main class="section">
     <div class="container">
       <h1 class="page-title">Bireysel Hizmetler</h1>
-      <div class="grid two">
+      
+      <div class="service-titles">
+        <div class="service-box">Hayaller ve İradem</div>
+        <div class="service-box">Profesyonel Koçluk</div>
+        <div class="service-box">Atölye Çalışmaları</div>
+      </div>
+      
+      <div class="grid three">
         <article class="card">
-          <h2>Koçluk</h2>
+          <h2>Hayaller ve İradem</h2>
           <p>
-            Kişisel hedeflerinize odaklanan, iç motivasyonu güçlendiren ve ölçülebilir ilerlemeyi
-            destekleyen birebir koçluk çalışmaları.
+            <strong>Performans Yönetim Programı</strong>
+          </p>
+          <p>
+            Transaksiyonel Analizin temellerinden faydalanarak geliştirilmiş bu program, 
+            bireylerin kendi potansiyellerini keşfetmelerine yardımcı olur.
+          </p>
+          <p>
+            Hedeflerinize odaklanmanız ve sürdürülebilir gelişim süreçleri tasarlamanız 
+            için sistematik bir yaklaşım sunar.
           </p>
         </article>
+        
+        <article class="card">
+          <h2>Profesyonel Koçluk</h2>
+          <p>
+            <strong>Birebir Gelişim Desteği</strong>
+          </p>
+          <p>
+            Kişisel hedeflerinize odaklanan, iç motivasyonu güçlendiren ve ölçülebilir 
+            ilerlemeyi destekleyen profesyonel koçluk çalışmaları.
+          </p>
+          <p>
+            Düşünce kalıplarınızı, davranış modellerinizi ve performans potansiyelinizi 
+            sistemli şekilde analiz ederek kişiselleştirilmiş gelişim planları oluşturuyoruz.
+          </p>
+        </article>
+        
         <article class="card">
           <h2>Atölye Çalışmaları</h2>
           <p>
-            Farkındalık, iletişim, öz yönetim ve güçlü yönlerin keşfi gibi başlıklarda etkileşimli
-            ve uygulamalı atölye içerikleri.
+            <strong>Etkileşimli Öğrenme Deneyimi</strong>
+          </p>
+          <p>
+            Farkındalık, iletişim, öz yönetim ve güçlü yönlerin keşfi gibi başlıklarda 
+            etkileşimli ve uygulamalı atölye içerikleri.
+          </p>
+          <p>
+            Grup dinamiği içinde öğrenme, pratik yapma ve deneyim paylaşımı ile 
+            kalıcı davranış değişimi sağlayan programlar.
           </p>
         </article>
+      </div>
+
+      <div style="margin-top: 4rem; text-align: center;">
+        <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Başlayalım</h2>
+        <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem;">
+          Gelişim yolculuğunuza bugün başlayın. Size en uygun programı birlikte belirleyelim.
+        </p>
+        <a class="btn btn-secondary" href="iletisim.html">İletişime Geçin</a>
       </div>
     </div>
   </main>
@@ -47,5 +98,7 @@
   <footer>
     © 2026 Emel Erik Çelik | Tüm hakları saklıdır.
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>

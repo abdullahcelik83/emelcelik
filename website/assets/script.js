@@ -1,4 +1,36 @@
 (function () {
+  // Mobile menu toggle functionality
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('nav');
+
+  if (mobileMenuToggle && nav) {
+    mobileMenuToggle.addEventListener('click', function() {
+      nav.classList.toggle('active');
+      mobileMenuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a nav link
+    const navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        nav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const isClickInsideNav = nav.contains(event.target);
+      const isClickOnToggle = mobileMenuToggle.contains(event.target);
+      
+      if (!isClickInsideNav && !isClickOnToggle && nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+      }
+    });
+  }
+
+  // Contact form functionality
   const form = document.getElementById('contact-form');
   if (!form) {
     return;
